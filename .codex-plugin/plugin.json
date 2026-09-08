@@ -1,0 +1,19 @@
+{
+  "name": "narrate-codex",
+  "version": "0.1.0",
+  "description": "Codex plugin for consequential narration",
+  "author": {
+    "name": "narrate-it"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Narrate",
+    "shortDescription": "Ask Codex to narrate what it is doing.",
+    "longDescription": "Adds a narrate prompt and a stream prompt for concise, phase-based progress updates.",
+    "developerName": "narrate-it",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use narrate for a concise update and stream for long-running work."
+  }
+}

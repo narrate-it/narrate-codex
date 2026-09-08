@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "narrate": {
+      "command": "npm",
+      "args": [
+        "run",
+        "mcp"
+      ]
+    }
+  }
+}

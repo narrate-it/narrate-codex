@@ -1,6 +1,5 @@
 #!/bin/sh
 set -eu
 
-target="${HOME}/plugins/narrate-codex"
-mkdir -p "$target"
-cp -R . "$target"/
+codex plugin marketplace add narrate-it/narrate-codex
+codex plugin add narrate-codex@narrate-codex

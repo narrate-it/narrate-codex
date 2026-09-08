@@ -9,8 +9,10 @@ This plugin gives Codex two prompts:
 
 ## Install
 
-Install the plugin into Codex and connect the bundled MCP server. After that,
-the prompts are available when you want the agent to narrate its work.
+Run `./install.sh` from this repo.
+
+The script copies the plugin into `~/plugins/narrate-codex`, which is the
+location Codex expects for local plugins in this setup.
 
 ## Prompt behavior
 

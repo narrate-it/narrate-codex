@@ -2,20 +2,32 @@
 
 Codex plugin for consequential narration.
 
-## What it provides
+This plugin gives Codex two prompts:
 
-- a `narrate` prompt for one concise update
-- a `stream` prompt for long-running work
-- a Codex plugin manifest and local MCP server wiring
+- `narrate` for a single status update
+- `stream` for ongoing narration during long-running work
 
 ## Install
 
-Install the plugin into Codex, then use the MCP prompts when you want the
-agent to narrate its work.
+Install the plugin into Codex and connect the bundled MCP server. After that,
+the prompts are available when you want the agent to narrate its work.
 
 ## Prompt behavior
 
+`narrate` should:
+
 - mention the current phase
-- explain the next consequential step
+- explain why the phase matters
+- state the next consequential step
+
+`stream` should:
+
 - keep updates brief
-- avoid secrets, raw diffs, and noisy low-level steps
+- report phase changes, retries, blockers, and completions
+- avoid secrets, raw diffs, and noisy implementation detail
+
+## Design goal
+
+The plugin is meant to make narration available on demand without turning the
+agent into a constant chatterbox. Use it when the work has consequence and the
+user benefits from being kept in the loop.

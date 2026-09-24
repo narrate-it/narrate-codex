@@ -1,27 +1,24 @@
-# narrate-codex
+# Narrate for Codex
 
-Codex plugin for consequential narration.
+A Codex plugin for concise progress narration. Use it to explain the current
+phase, why it matters, and what consequential step comes next. Streaming
+updates stay brief and surface phase changes, retries, blockers, and completion.
 
 ## Install
 
-Run:
+From this repository, run:
 
 ```sh
 ./install.sh
 ```
 
-That adds the marketplace and installs the plugin.
+The installer adds the Narrate marketplace and installs the plugin.
 
-## Prompt behavior
+## Prompts
 
-`narrate`:
+- `narrate`: summarize the current phase and next step.
+- `stream`: report meaningful progress changes without repeating every tool
+  call or exposing secrets and raw diffs.
 
-- mention the current phase
-- explain why the phase matters
-- state the next consequential step
-
-`stream`:
-
-- keep updates brief
-- report phase changes, retries, blockers, and completions
-- avoid secrets, raw diffs, and noisy implementation detail
+See the [Narrate CLI](https://github.com/narrate-it/narrate) for audio output,
+installation options, and configuration.
